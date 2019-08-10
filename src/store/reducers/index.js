@@ -13,6 +13,7 @@ const userReducer = (state = userState, action) => {
         case REQ_LOGIN: 
             return { ...state, isLogin: false }
         case LOGIN_SUCC:
+            sessionStorage.setItem("userInfo", action.payload)
             return { ...state, isLogin: true, userinfo: action.payload }
         case LOGIN_ERR:
             return { ...state, isLogin: false, errMsg: action.payload }
