@@ -64,6 +64,7 @@ class Home extends Component {
                   <li><Link to='/home'>首页</Link></li>
                   <li><Link to='/about'>关于</Link></li>
                   <li><Link to='/user'>用户</Link></li>
+                  <li><Link to='/other'>其他</Link></li>
                 </ul>
                 {/* 同步方式 */}
                 <Button type='primary' onClick={this.change}>点击改变数字</Button>
